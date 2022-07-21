@@ -243,9 +243,6 @@ def Generate_HDR_image_with_GaussianWeightv3(input, mask, PE_net, FS_net, Fused_
             stop4 = timeit.default_timer()
             DemosaicingNet_ct = DemosaicingNet_ct + stop4 - start4
 
-            # count = count + 1
-            # fake_imgs, _ = HDR_net(Bayer_rad_log)
-            # pout = torch.exp(fake_imgs.clamp_(max = 30))
             pout = torch.exp(fake_imgs)
 
             p_cpu = pout.cpu()
@@ -281,10 +278,10 @@ def Generate_HDR_image_with_GaussianWeightv3(input, mask, PE_net, FS_net, Fused_
     # ExRNet_ct = ExRNet_ct / count
     # FusionNet_ct = FusionNet_ct / count
     # DemosaicingNet_ct = DemosaicingNet_ct / count
-    total_ct = DINet_ct + ExRNet_ct + FusionNet_ct + DemosaicingNet_ct
+    # total_ct = DINet_ct + ExRNet_ct + FusionNet_ct + DemosaicingNet_ct
 
-    print('---DINet: %.4f/image---ExRNet: %.4f/image---FusionNet: %.4f/image---Demosaicing: %.4f/image---' %(DINet_ct, ExRNet_ct, FusionNet_ct, DemosaicingNet_ct))
-    print('---TOTAL: %.4f/image' %(total_ct))
+    # print('---DINet: %.4f/image---ExRNet: %.4f/image---FusionNet: %.4f/image---Demosaicing: %.4f/image---' %(DINet_ct, ExRNet_ct, FusionNet_ct, DemosaicingNet_ct))
+    # print('---TOTAL: %.4f/image' %(total_ct))
 
     return output
 
