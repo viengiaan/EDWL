@@ -27,6 +27,14 @@ Running the test code:
 **We are in preparing to share train codes soon!**
 
 ### Citation
-
+Please cite the following paper if you feel this repository useful.
+```
+    @inproceedings{EDWL,
+        author    = {An Gia Vien and Chul Lee}, 
+        title     = {Exposure-Aware Dynamic Weighted Learning for Single-Shot HDR Imaging}, 
+        booktitle = {European Conference on Computer Vision},
+        year      = {2022}
+    }
+```
 ### License
 See [MIT License](https://github.com/viengiaan/EDWL/blob/main/LICENSE)
