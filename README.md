@@ -1,15 +1,15 @@
-# EDWL (ECCV2022)
+### EDWL (ECCV2022)
 
 An Gia Vien and Chul Lee
 
 Official PyTorch Code for **"Exposure-Aware Dynamic Weighted Learning for Single-Shot HDR Imaging"**
 
-# Requirements
+### Requirements
 - PyTorch 1.7.1/1.9.0
 - Python 3.8.5/3.8.8
 - mat73
 
-# Set up
+### Set up
 - Test data path (e.g., "Kalantari/")
 - Output path (e.g., "test_results/")
 - Weight path (e.g., "WEIGHTS_ECCV2022/")
@@ -17,7 +17,7 @@ Official PyTorch Code for **"Exposure-Aware Dynamic Weighted Learning for Single
 - Download Kalantari data for testing from: 
 - Download pretrained weights from: 
 
-# Usage
+### Usage
 Running the test code:
 ```
     $ python Main_testing.py
