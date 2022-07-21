@@ -14,6 +14,9 @@ Official PyTorch Code for **"Exposure-Aware Dynamic Weighted Learning for Single
 - Output path (e.g., "test_results/")
 - Weight path (e.g., "WEIGHTS_ECCV2022/")
 
+- Download Kalantari data for testing from: 
+- Download pretrained weights from: 
+
 # Usage
 Running the test code:
 ```
