@@ -178,11 +178,6 @@ class FusionModule_v4(nn.Module):
         Fc_a = F.normalize(Fc_a, dim=2)
         Fs_a = F.normalize(Fs_a, dim=1)
         Sc = torch.bmm(Fc_a, Fs_a)  # B, C, C
-        Sc_sum = torch.sum(Sc, dim=2)
-        Sc_sum = torch.sum(Sc_sum, dim=1)
-        Sc_sum = Sc_sum.unsqueeze(dim=1)
-        Sc_sum = Sc_sum.unsqueeze(dim=2)  # B, 1, 1
-        Sc_norm = Sc / (Sc_sum + 1e-5)  # B, C, C
         Sc_norm = torch.sum(Sc, dim=2).unsqueeze(dim=2)
 
         # Height-Similarity Map
@@ -195,12 +190,7 @@ class FusionModule_v4(nn.Module):
 
         Fc_b = F.normalize(Fc_b, dim=2)
         Fs_b = F.normalize(Fs_b, dim=1)
-        Sh = torch.bmm(Fc_b, Fs_b)  # B, H, H
-        Sh_sum = torch.sum(Sh, dim=2)
-        Sh_sum = torch.sum(Sh_sum, dim=1)
-        Sh_sum = Sh_sum.unsqueeze(dim=1)
-        Sh_sum = Sh_sum.unsqueeze(dim=2)  # B, 1, 1
-        Sh_norm = Sh / (Sh_sum + 1e-5)  # B, H, H
+        Sh = torch.bmm(Fc_b, Fs_b)  # B, H, H        
         Sh_norm = torch.sum(Sh, dim=2).unsqueeze(dim=2)
 
         # Column-Similarity Map
@@ -214,11 +204,6 @@ class FusionModule_v4(nn.Module):
         Fc_c = F.normalize(Fc_c, dim=2)
         Fs_c = F.normalize(Fs_c, dim=1)
         Sw = torch.bmm(Fc_c, Fs_c)  # B, W, W
-        Sw_sum = torch.sum(Sw, dim=2)
-        Sw_sum = torch.sum(Sw_sum, dim=1)
-        Sw_sum = Sw_sum.unsqueeze(dim=1)
-        Sw_sum = Sw_sum.unsqueeze(dim=2)  # B, 1, 1
-        Sw_norm = Sw / (Sw_sum + 1e-5)  # B, W, W
         Sw_norm = torch.sum(Sw, dim=2).unsqueeze(dim=2)
 
         # Final Weight Map for fusing Fch & Fsp
