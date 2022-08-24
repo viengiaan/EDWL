@@ -25,7 +25,7 @@ Running the test code:
 ```
 
 ###
-**We are in preparing to share train codes soon!**
+**We are in preparing to share train and evaluation metric estimation codes soon!**
 
 ### Citation
 Please cite the following paper if you feel this repository useful.
