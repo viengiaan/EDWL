@@ -4,6 +4,11 @@ An Gia Vien and Chul Lee
 
 Official PyTorch Code for **"Exposure-Aware Dynamic Weighted Learning for Single-Shot HDR Imaging"**
 
+### Introduction
+![](/figs/Overview.png)
+
+We propose a novel single-shot high dynamic range (HDR) imaging algorithm based on exposure-aware dynamic weighted learning, which reconstructs an HDR image from a spatially varying exposure (SVE) raw image. First, we recover poorly exposed pixels by developing a network that learns local dynamic filters to exploit local neighboring pixels across color channels. Second, we develop another network that combines only valid features in well-exposed regions by learning exposure-aware feature fusion. Third, we synthesize the raw radiance map by adaptively combining the outputs of the two networks that have different characteristics with complementary information. Finally, a full-color HDR image is obtained by interpolating missing color information.
+
 ### Requirements
 - PyTorch 1.7.1/1.9.0
 - Python 3.8.5/3.8.8
