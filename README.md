@@ -8,6 +8,7 @@ Official PyTorch Code for **"Exposure-Aware Dynamic Weighted Learning for Single
 - PyTorch 1.7.1/1.9.0
 - Python 3.8.5/3.8.8
 - mat73
+- Matlab 2020a (for estimating evaluation metrics: pu-/log-PSNR, pu-MSSSIM, HDR-VDP, and HDR-VQM)
 
 ### Set up
 - Test data path (e.g., "Kalantari/")
