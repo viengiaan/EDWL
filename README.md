@@ -4,6 +4,8 @@ An Gia Vien and Chul Lee
 
 Official PyTorch Code for **"Exposure-Aware Dynamic Weighted Learning for Single-Shot HDR Imaging"**
 
+Paper link: https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136670429.pdf
+
 ### Introduction
 ![](/figs/Overview.png)
 
