@@ -6,6 +6,8 @@ Official PyTorch Code for **"Exposure-Aware Dynamic Weighted Learning for Single
 
 Paper link: https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136670429.pdf
 
+Supplemental material: https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136670429-supp.pdf
+
 ### Introduction
 ![](/figs/Overview.png)
 
