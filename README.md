@@ -25,7 +25,7 @@ We propose a novel single-shot high dynamic range (HDR) imaging algorithm based 
 - Weight path (e.g., "WEIGHTS_ECCV2022/")
 
 - Download Kalantari data for testing from: https://drive.google.com/file/d/1bkyNjlMst8rz5xRI43uzkOwhtNiTMWI2/view?usp=sharing
-- Download pretrained weights from: https://drive.google.com/file/d/1v32KDb7qwck7lJL59m5ei7eGeGA6Qvjx/view?usp=sharing
+- Download pretrained weights from: https://drive.google.com/file/d/1v32KDb7qwck7lJL59m5ei7eGeGA6Qvjx/view?usp=share_link
 
 ### Usage
 Running the test code:
