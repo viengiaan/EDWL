@@ -3,6 +3,7 @@ import torch
 import scipy.io
 import numpy as np
 
+from NETWORK.Demosaiced_RNAN import RNAN
 from NETWORK.Proposed_Network import ExRNet_FusionModule_v4
 from NETWORK.Network_subimages import Feature_Selection, Fusion_Net
 
